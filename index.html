@@ -1,0 +1,360 @@
+<!--Proyecto SASS-->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/logo.png">
+    <!--Animated on Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="scss/estilos.css">
+    <title>Panaderia Bakery</title>
+    <!-- SEO -->
+    <meta name="description" content="Sitio web de Recetas y ventas de Panes,Facturas y mas">
+    <meta name="keywords" content="Medialunas,Criollitos, Budin, Alfajores, Y Mas">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!--Inicio de NavBar-->
+            <div class="container-fluid">
+                <div class="contenedor__logo">
+                    <a href="#" class="header__link">
+                        <img src="assets/logosuperior.avif" alt="#" class="header__img">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link tracking-in-expand" href="index.html">Home</a>
+                        <a class="nav-link tracking-in-expand" href="recetas.html">Recetas</a>
+                        <a class="nav-link tracking-in-expand" href="comentarios.html">Comentarios</a>
+                        <a class="nav-link tracking-in-expand" href="acerca_de.html">Acerca De</a>
+                        <a class="nav-link tracking-in-expand" href="registro.html">Registro</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de NavBar-->
+    </header>
+    <main>
+        <section class="container-fluid ola">
+            <div class="container__ola">
+                <div class="content__ola">
+                    <h1 class="tracking-in-expand">Sean Bienvenidos a Bakery</h1>
+                    <p class="tracking-in-expand">¡Accede Nuestro Catalogo de Recetas!</p>
+                </div>
+                <div class="waves">
+                    <div class="wave circulo a"></div>
+                    <div class="wave circulo b"></div>
+                    <div class="wave circulo c"></div>
+                </div>
+            </div>
+        </section> 
+        <section class="hero">
+            <!--Inicio de Seccion "Hero"-->
+            <div class="hero__contenedor">
+                <h4 class="hero__titulo ">¡Enterate de Nuestros Servicios y Ofertas!</h4>
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-light btn__compra">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                       ¡Nuestra Tienda!
+                    </button>
+                    <button type="button" class="btn btn-light  btn__mensaje">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>
+                       ¿Dudas? ¡Escribinos!
+                    </button>
+                </div>                
+            </div>
+        </section>
+        <!--Fin de Seccion "Hero"-->
+        <hr>
+        <section class="album__html">
+            <!--Inicio de Seccion "Album"-->
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Conoce Nuestras Facturas y Panes</h1>
+                <p class="fs-5 text-muted">Facturas mas Destacadas:</p>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-1 shadow-sm">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Cañonsitos</h4>
+                            </div>
+                            <div data-aos="fade-right" class="card-body">
+                                <img class="img-fluid " src="assets/foto1.jpg" alt="foto_alfajor_1" loading="lazy">
+                                <hr>
+                                <p>Para el empaste colocar la harina y la sal en la mesa, y colocar la margarina cortada en cubos medianos en el centro. Mezclar sin darle mucho trabajo.
+                                    Para el amasijo formar una corona con la harina, agregarle el agua y unir hasta lograr una masa.
+                                    Estirar la masa en forma rectangular y dejarla descansar durante 5 minutos. Luego estirarla hasta 1 cm de espesor aproximadamente.
+                                    Dividir la masa en 4 partes y encimar 1 sobre 2. Luego encimar 4 sobre 3. Por ultimo, encimar 4 sobre 1. Luego cerrarla en forma de libro. Esta operación se denomina vuelta doble.
+                                    Girar la masa. Volver a estirar la masa en sentido inverso al anterior. Repetir la operación 4 veces, siempre respetando los tiempos de descanso.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+                                    <hr>
+                                    <button class="learn-more btn-animado">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Mas Info...!</span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-1 shadow-sm">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Facturas de Dulce de Leche</h4>
+                            </div>
+                            <div data-aos="fade-up" class="card-body">
+                                <img class="img-fluid" src="assets/foto2.jpg" alt="foto_alfajor_2" loading="lazy">
+                                <hr>
+                                <p>Colocar la harina dentro de un bowl, junto con el azúcar y la sal. Mezclar a penas.
+                                    Agregar la leche, los huevos, esencia de vainilla, miel y levadura.
+                                    Mezclar bien todo para incorporar los ingredientes, al principio con una cuchara y luego con las manos.
+                                    
+                                    Colocar la masa sobre la mesa de trabajo y comenzar a amasar hasta obtener un bollo consistente.
+                                    Es importante desarrollar el gluten previo a la incorporación de la manteca / mantequilla, en recetas que requieran un gran porcentaje de la misma. De lo contrario, cuesta mucho más trabajo hacerlo.
+
+                                    Ubicar el bollo delante nuestro, abrir la masa con las manos, desgarrando la superficie y comenzar a agregar la manteca de a poco.
+                                    Sólo un poco y amasar para incorporar.
+                                    Repetir hasta completar toda la manteca.</p>
+                                    <hr>
+                                    <button class="learn-more btn-animado">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Mas Info...!</span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-1 shadow-sm ">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Facturas con Crema Pastelera</h4>
+                            </div>
+                            <div data-aos="fade-left" class="card-body">
+                                <img class="img-fluid" src="assets/foto3.jpg" alt="foto_alfajor_3" loading="lazy">
+                                <hr>
+                                <p>En un recipiente mezclar el huevo, azúcar, aceite, la esencia de vainilla y la leche tibia.
+                                    Agregamos la levadura seca, revolvemos un poco y agregamos la harina.
+                                    Integrar con una espátula, no tienen que quedar grumos.
+                                    Tenemos que lugar un bollo bien integrado y liso.
+                                    Dejar reposar hasta que se duplique el volumen.
+                                    Lo estiramos espolvoreando harina sobre la mesa, darle a la masa una forma rectangular.
+                                    Cortar en tiras y unirlas de a dos y formar trenzas.
+                                    Unir los extremos formando un número ocho.
+                                    Colocar en una placa previamente aceitada, dejar reposar hasta que dupliquen su tamaño.
+                                    Cuando dupliquen su tamaño, rellenar con crema pastelera, pintar con huevo.
+                                    Llevar a horno fuerte por 15 minutos.
+                                    Cortar por la mitad y espolvorear con azúcar impalpable.</p>
+                                    <hr>
+                                    <button class="learn-more btn-animado">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Mas info...!</span>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de Seccion "Album"-->
+        </section>
+        <hr>
+        <section class="precios__home">
+            <!--Inicio de Seccion "Precios"-->
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Conoce Nuestros Panes</h1>
+                <p class="fs-5 text-muted">Los Mas Destacados:</p>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Pan de Centeno</h4>
+                            </div>
+                            <div class="card-body">
+                                <img class="img-fluid" src="assets/Pan1.jpg" alt="foto_alfajor_2" loading="lazy">
+                             <hr>
+                                <button class="learn-more btn-animado">
+                                    <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Mas Detalles</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Pan de Avena</h4>
+                            </div>
+                            <div class="card-body">
+                                <img class="img-fluid" src="assets/pan2.jpg" alt="foto_alfajor_2" loading="lazy">
+                                <hr>
+                                <button class="learn-more btn-animado">
+                                    <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Mas Detalles</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-2 bg__card">
+                                <h4 class="my-0 fw-normal bg__title">Pan de Maiz</h4>
+                            </div>
+                            <div class="card-body">
+                                <img class="img-fluid" src="assets/pan3.jpg" alt="foto_alfajor_2" loading="lazy">
+                                <hr>
+                                <button class="learn-more btn-animado">
+                                    <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text">Mas Detalles</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin de Seccion "Precios"-->
+        <hr>
+    </main>
+    <footer class="bg__footer text-center text-lg-start text-white">
+    <!-- Inicio Footer -->
+    <div class="container pt-4">
+        <div class="row my-4">
+        <div class="col-lg-3 col-md-6 mb-2 mb-md-0">
+            <div class="rounded-circle bg-black shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 130px;">
+            <img src="assets/logofooter.jpg"  alt="#"
+                class="logo__footer" loading="lazy" />
+            </div>
+            <p class="text-center">Bienevenidos a Bakery</p>
+            <p class="text-center">¡Tu Panaderia Favorita!</p>
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Beneficios</h5>
+            <ul class="list-unstyled">
+            <li class="mb-2">
+                <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg></i> Descuentos%</p>
+            </li>
+            <li class="mb-2">
+                <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg></i> Ofertas%</p>
+            </li>
+            <li class="mb-2">
+                <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg></i></i> Precios Exclusivos%</p>
+            </li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Horarios</h5>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                      </svg></i> Mañana 8:00-12:00</p>
+                </li>
+                <li class="mb-2">
+                    <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                      </svg></i> Tarde 17:00-19:00</p>
+                </li>
+                <li class="mb-2">
+                    <p href="#!" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                      </svg></i> Noche 20:00-24:00</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Info de Contacto</h5>
+            <ul class="list-unstyled">
+            <li>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg></i> Merlo-San Luis</p>
+            </li>
+            <li>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg></i> 02664000780</p>
+            </li>
+            <li>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                  </svg></i> Ezearias111@gmail.com</p>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="text-center pb-3" >
+        <div class="container p-1 pb-0">
+            <!-- Section: Redes Sociales -->
+            <section class="mb-1">
+              
+                 <a class="btn btn-primary btn-floating m-1 instagram--logo" href="#!" 
+                 role="button"><i class="bi bi-instagram"></i></a>
+                
+                <a class="btn btn-primary btn-floating m-1 google--logo"  href="#!"
+                role="button"><i class="bi bi-google"></i></a>
+           
+                <a class="btn btn-primary btn-floating m-1 facebook--logo"  href="#!"
+                    role="button"><i class="bi bi-facebook"></i></a>
+
+                    <a class="btn btn-primary btn-floating m-1 twitter--logo"  href="#!"
+                    role="button"><i class="bi bi-twitter"></i></a>
+
+             
+             
+            </section>
+            <!-- Section: Redes sociales -->
+        </div>
+        <!-- Fin Footer -->
+    </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
